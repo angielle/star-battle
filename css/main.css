@@ -1,0 +1,19 @@
+.container {
+    position: absolute;
+    background: url('../assets/img/space.jpg') repeat; 
+    opacity: 1;
+    width: 100%;
+
+    /* ! specify where to position the background */
+    top: -630px; left: 0; bottom: 0; right: 0;
+    animation: backdrop_roll linear 10s infinite;
+}
+
+@keyframes backdrop_roll { 
+    from { 
+        background-position-y: -630px;
+    } 
+    to { 
+        background-position-y: 0;
+    }
+}
